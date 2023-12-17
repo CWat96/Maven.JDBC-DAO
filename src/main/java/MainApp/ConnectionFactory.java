@@ -11,8 +11,8 @@ import java.sql.SQLException;
 public class ConnectionFactory {
 
     public static final String URL = "jdbc:mysql://localhost:3306/Cars";
-    public static final String USER = "cc";
-    public static final String PASS = "zipcode0";
+    public static final String USER = System.getenv("UserName");
+    public static final String PASS = System.getenv("Password");
 
     /**
      * Get a connection to database
